@@ -11,10 +11,11 @@ public class Sailor {
     private String address;         // adresse (AdresseDTO) dans Objet IndividuDto
     private String email;           // email dans ADM
     private String phoneNumber;     // cette info n'est pas récupérable par API ADM
+
+
+    // Peut-être à mettre dans une autre classe type "identityMarker"
     private String photo;           // cette info n'est pas récupérable par API ADM
     private String signature;       // cette info n'est pas récupérable par API ADM
-    // aptitude médicale
-    // attestations possédées
 
 
     public Sailor(int id,
