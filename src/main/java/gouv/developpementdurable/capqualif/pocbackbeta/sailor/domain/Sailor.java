@@ -42,91 +42,48 @@ public class Sailor {
 
     // TO DO : remove non-necessary getters/setters
 
+
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public Long getSailorNumber() {
         return sailorNumber;
     }
 
-    public void setSailorNumber(Long sailorNumber) {
-        this.sailorNumber = sailorNumber;
-    }
-
     public String getFirstName() {
         return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
     }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
     public String getDateOfBirth() {
         return dateOfBirth;
-    }
-
-    public void setDateOfBirth(String dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
     }
 
     public String getPlaceOfBirth() {
         return placeOfBirth;
     }
 
-    public void setPlaceOfBirth(String placeOfBirth) {
-        this.placeOfBirth = placeOfBirth;
-    }
-
     public String getAddress() {
         return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
     }
 
     public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public String getPhoneNumber() {
         return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
     }
 
     public String getPhoto() {
         return photo;
     }
 
-    public void setPhoto(String photo) {
-        this.photo = photo;
-    }
-
     public String getSignature() {
         return signature;
-    }
-
-    public void setSignature(String signature) {
-        this.signature = signature;
     }
 }

@@ -1,12 +1,12 @@
-package gouv.developpementdurable.capqualif.pocbackbeta.sailor.adapter.out.api;
+package gouv.developpementdurable.capqualif.pocbackbeta.sailor.adapters.out.api;
 
 import gouv.developpementdurable.capqualif.pocbackbeta.sailor.domain.Sailor;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SailorCivilDataAPIMock {
+public class SailorBasicDataAPIMock {
 
-    public Sailor findSailorCivilDataBySailorNumber() {
+    public Sailor findSailorBasicDataBySailorNumber() {
         Sailor sailor = new Sailor(
                 123,
                 "Virginia",
