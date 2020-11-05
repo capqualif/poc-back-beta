@@ -1,6 +1,6 @@
 package gouv.developpementdurable.capqualif.pocbackbeta.sailor.domain;
 
-public class SailorCivicData {
+public class SailorCivilData {
     private String sailorNumber;      // numeroIdentification dans Objet IndividuDto (numIdentification dans doc API ADM)
     private String firstName;       // prénom dans Objet IndividuDto
     private String lastName;        // nom dans Objet IndividuDto
@@ -11,7 +11,7 @@ public class SailorCivicData {
 //    private String phoneNumber;     // cette info n'est pas récupérable par API ADM
 
 
-    public SailorCivicData(String sailorNumber, String firstName, String lastName, String dateOfBirth, String placeOfBirth, String address, String email) {
+    public SailorCivilData(String sailorNumber, String firstName, String lastName, String dateOfBirth, String placeOfBirth, String address, String email) {
         this.sailorNumber = sailorNumber;
         this.firstName = firstName;
         this.lastName = lastName;

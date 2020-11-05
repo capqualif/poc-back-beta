@@ -1,16 +1,12 @@
 package gouv.developpementdurable.capqualif.pocbackbeta.sailor.domain;
 
-import gouv.developpementdurable.capqualif.pocbackbeta.title.domain.Title;
-
-import java.util.List;
-
 public class Sailor {
 
     // [Numéro de marin] The official number
     private String sailorNumber;                                  // numeroIdentification dans Objet IndividuDto (numIdentification dans doc API ADM)
 
     // Civic data : birth date, address, phone number, email...
-    private SailorCivicData sailorCivicData;
+    private SailorCivilData sailorCivilData;
 
     // Identity markers : photo, signature...
     private SailorIdentityMarkersData sailorIdentityMarkersData;
@@ -18,9 +14,9 @@ public class Sailor {
     // Education : titles, visas...
     private SailorEducationData sailorEducationData;
 
-    public Sailor(String sailorNumber, SailorCivicData sailorCivicData, SailorIdentityMarkersData sailorIdentityMarkersData, SailorEducationData sailorEducationData) {
+    public Sailor(String sailorNumber, SailorCivilData sailorCivilData, SailorIdentityMarkersData sailorIdentityMarkersData, SailorEducationData sailorEducationData) {
         this.sailorNumber = sailorNumber;
-        this.sailorCivicData = sailorCivicData;
+        this.sailorCivilData = sailorCivilData;
         this.sailorIdentityMarkersData = sailorIdentityMarkersData;
         this.sailorEducationData = sailorEducationData;
     }
@@ -29,8 +25,8 @@ public class Sailor {
         return sailorNumber;
     }
 
-    public SailorCivicData getSailorCivicData() {
-        return sailorCivicData;
+    public SailorCivilData getSailorCivilData() {
+        return sailorCivilData;
     }
 
     public SailorIdentityMarkersData getSailorIdentityMarkersData() {
