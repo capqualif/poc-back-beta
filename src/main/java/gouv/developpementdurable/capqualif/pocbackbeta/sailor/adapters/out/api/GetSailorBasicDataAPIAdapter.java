@@ -1,5 +1,8 @@
 package gouv.developpementdurable.capqualif.pocbackbeta.sailor.adapters.out.api;
 
+import gouv.developpementdurable.capqualif.pocbackbeta.sailor.adapters.out.api.mocks.SailorCivilDataApiMock;
+import gouv.developpementdurable.capqualif.pocbackbeta.sailor.adapters.out.api.mocks.SailorEducationDataApiMock;
+import gouv.developpementdurable.capqualif.pocbackbeta.sailor.adapters.out.api.mocks.SailorIdentityMarkersDataApiMock;
 import gouv.developpementdurable.capqualif.pocbackbeta.sailor.application.ports.out.GetSailorBasicDataPort;
 import gouv.developpementdurable.capqualif.pocbackbeta.sailor.domain.Sailor;
 import gouv.developpementdurable.capqualif.pocbackbeta.sailor.domain.SailorCivilData;
@@ -12,10 +15,10 @@ import org.springframework.stereotype.Component;
 public class GetSailorBasicDataAPIAdapter implements GetSailorBasicDataPort {
 
     @Autowired
-    private SailorCivilDataAPIMock sailorCivilDataAPIMock;
+    private SailorCivilDataApiMock sailorCivilDataApiMock;
 
     @Autowired
-    private SailorEducationDataAPIMock sailorEducationDataAPIMock;
+    private SailorEducationDataApiMock sailorEducationDataApiMock;
 
     @Autowired
     private SailorIdentityMarkersDataApiMock sailorIdentityMarkersDataApiMock;
@@ -37,13 +40,13 @@ public class GetSailorBasicDataAPIAdapter implements GetSailorBasicDataPort {
         // TO DO : replace by the actual
         String sailorId = sailorNumber;
         // TO DO : replace by an API call : [URL_BASE_ADM]/api/v1/marins?numIdentification= {numIdentification}
-        return sailorCivilDataAPIMock.findSailorCivilDataBySailorId(sailorId);
+        return sailorCivilDataApiMock.findSailorCivilDataBySailorId(sailorId);
     }
 
     private SailorEducationData getSailorEducationData(String sailorNumber) {
         String sailorId = sailorNumber;
         // TO DO : replace by an API call : [URL_BASE_ITEM]/api/v1/titres/{idAdmIntervenant}
-        return sailorEducationDataAPIMock.findSailorEducationDataBySailorId(sailorId);
+        return sailorEducationDataApiMock.findSailorEducationDataBySailorId(sailorId);
     }
 
     private SailorIdentityMarkersData getSailorIdentityMarkersData(String sailorNumber) {
