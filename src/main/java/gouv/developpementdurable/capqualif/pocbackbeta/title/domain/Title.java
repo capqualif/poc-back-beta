@@ -20,4 +20,28 @@ public class Title {
         this.effectDate = effectDate;
         this.expirationDate = expirationDate;
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getTitleNumber() {
+        return titleNumber;
+    }
+
+    public String getDeliveryDate() {
+        return deliveryDate;
+    }
+
+    public String getRevalidationDate() {
+        return revalidationDate;
+    }
+
+    public String getEffectDate() {
+        return effectDate;
+    }
+
+    public String getExpirationDate() {
+        return expirationDate;
+    }
 }

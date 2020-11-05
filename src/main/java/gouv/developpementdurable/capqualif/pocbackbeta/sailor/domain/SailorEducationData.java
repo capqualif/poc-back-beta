@@ -8,7 +8,6 @@ public class SailorEducationData {
     private List<Title> titles;
     //    TO DO : add private List<String> visas;
 
-
     public SailorEducationData(List<Title> titles) {
         this.titles = titles;
     }
